@@ -11,3 +11,175 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* KAYNAK BUTONLARI */
+button.kategoriler {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+.royal {
+  background-color: royalblue;
+}
+
+.flex {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+* {
+ margin: 0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* App.js için */
+.App {
+  position: absolute;
+  min-height: 30rem;
+  width: 35rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: -1px 4px 50px 2px rgba(0,0,0,0.4);
+  background-image: linear-gradient(to right, lightgray,darkgray)
+}
+.tab {
+list-style-type: none;
+color: lightgray;
+top: 0;
+left: 1rem;
+display: inline-block;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+border-bottom: 1px solid blue;
+clip-path: polygon(0% 0%, 20% 100%, 80% 100%, 100% 0%);
+background-color: black;
+}
+
+
+
+.active {
+  background-color: royalblue;
+  transform: translateY(.4rem) scale(1.2);
+}
+
+
+h3 {
+  margin-bottom: 0.3rem;
+}
+p {
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+.sıfırla {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top:0;
+  padding-bottom: 2rem;
+}
+
+.düzen {
+  color: lightgray !important;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.düzen:active, .düzen:hover {
+  background-color: royalblue;
+  transform: scale(1.2);
+}
+
+
+/************* Program.js ***************/
+
+.inputno {
+  margin-bottom: 0.8rem;
+  width: 3rem;
+}
+
+.probar {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  width: 24rem;
+  height: 2rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.probar div{
+    height: 100%;
+    width: 0.2rem;
+    background-color: blue;
+}
+
+.sıralama:nth-child(odd) {
+ /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  
+  list-style-type: none;
+  font-weight: 100;
+  background-color: lightblue;
+  width: 24rem;
+}
+
+
+.sıralama:nth-child(1) {
+  /* display: flex;
+   justify-content: center; */
+   text-align: center;
+   margin-top: 2rem;
+   list-style-type: none;
+   font-weight: 100;
+   background-color: lightblue;
+   width: 24rem;
+ }
+
+.sıralama:nth-child(even) {
+  /* display: flex;
+   justify-content: center; */
+   text-align: center;
+   
+    list-style-type: none;
+   font-weight: 100;
+   background-color: lightyellow;
+   width: 24rem;
+ }
+
+.kaynaksıralama {
+  font-size: .8rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.toplambilgi{
+  font-weight: 400;
+  display: inline-block;
+  align-self: center;
+}
