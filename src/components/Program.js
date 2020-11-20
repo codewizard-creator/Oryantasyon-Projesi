@@ -146,7 +146,7 @@ export default function Program() {
                 setetap(etap + 1);
 
             }}>{etap <= 3 ? "sıradaki" : ""}</button>
-            <span className="toplambilgi">toplam {toplam} </span>
+            <span className="toplambilgi">toplam saat {toplam} </span>
         <ul className="kaynaksıralama">Önerilen kaynaklar:( {etap===2 && branchone || etap===3 && branchtwo || etap===4 && branchthree} ) 
          {kaynak.map((k)=> {
                 return (<li key={k.id} className = "sıralama">

@@ -34,6 +34,13 @@
         text: "lorem ipsum dolor sit amet",
         konular : ['php','css']
     },
+    {
+        id: 6,
+        kaynakismi: "yazılımgençliği4.com",
+        kategori: "bilgini sına",
+        text: "lorem ipsum dolor sit",
+        konular : ['php','css','javascript']
+    },
 
 ]
 
