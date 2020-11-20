@@ -4,7 +4,7 @@
         kaynakismi: "yazılımgençliği1.com",
         kategori: "kodlayarak öğren",
         text: "lorem ipsum",
-        konular : ['javascript','html','css']
+        konular : ['JS','html','css']
     },
     {
         id: 2,
@@ -19,7 +19,7 @@
         kaynakismi: "bizimiçinyazılım2.com",
         kategori: "dökümantasyon",
         text: "lorem ipsum dolor sit amet",
-        konular : ['javascript','css']
+        konular : ['JS','css']
     },
     {
         id: 4,
@@ -33,7 +33,7 @@
         kaynakismi: "yazılımgençliği3.com",
         kategori: "dökümantasyon",
         text: "lorem ipsum dolor sit",
-        konular : ['php','css','javascript']
+        konular : ['php','css','JS']
     },
     {
         id: 6,

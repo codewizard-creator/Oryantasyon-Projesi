@@ -136,6 +136,10 @@ p {
 }
 
 .probar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
     height: 100%;
     width: 0.2rem;
     background-color: blue;
