@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import Destek from './components/Destek';
+
 import Kaynak from './components/Kaynak';
 import Program from './components/Program';
 
@@ -34,15 +34,7 @@ function App() {
             Kaynak
           </li>
           </Link>
-          <Link onClick={() => {
-        setclickb(false);
-        setclickc(true);
-        setclicka(false);
-      }} className={clickc && "active düzen"} to="/destek">
-          <li className="tab">
-            Destek
-          </li>
-          </Link>
+          
         </ul>
 
 
@@ -52,7 +44,6 @@ function App() {
           <Route exact path="/kaynak" component={Kaynak}/>
             
           
-          <Route exact path="/destek"  component={Destek}/>
 
           <Route exact path="/program" component={Program} />
             

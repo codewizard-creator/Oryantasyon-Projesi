@@ -25,9 +25,9 @@ function Kaynak(props) {
                 <button className={kategorim === "" ? "royal kategoriler" : " kategoriler"} onClick={() => {
                     setkategorim("");
                 }}>Hepsi</button>
-                <button className={kategorim === "yaparaköğren" ? "royal kategoriler " : "kategoriler"} onClick={() => {
-                    setkategorim("yaparaköğren");
-                }}>Yaparak öğren</button>
+                <button className={kategorim === "kodlayarak öğren" ? "royal kategoriler " : "kategoriler"} onClick={() => {
+                    setkategorim("kodlayarak öğren");
+                }}>Kodlayarak öğren</button>
                 <button className={kategorim === "bilgini sına" ? "royal kategoriler " : "kategoriler"} onClick={() => {
                     setkategorim("bilgini sına");
                 }}>Bilgini sına </button>
@@ -37,10 +37,10 @@ function Kaynak(props) {
             </div>
             
             <div className="flex">
-                <ul>
+                <ul className="kaynaksıralama">
                 {kaynak.map(kynk => {
-                    return (<><h3 key={kynk.id} className="hey">{kynk.konular.join(" - ")} -&gt; {kynk.kaynakismi}</h3> 
-                    <p>( {kynk.kategori} )</p>
+                    return (<><li className="sıralama" key={kynk.id}><h3  className="hey">{kynk.konular.join(" - ")} -&gt; {kynk.kaynakismi}</h3> 
+                    <p>( {kynk.kategori} )</p></li>
                     
                     </>)
                 })}

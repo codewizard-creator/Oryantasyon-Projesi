@@ -21,9 +21,12 @@ export default function Program() {
         
         if (value <= 6 && etap === 1) {
             count1.current.style.width = (value * 1) + "rem";
+           
+
+            
         }
         if (value <= 6 && etap === 2) {
-
+            
             count2.current.style.width = (value * 1) + "rem";
         }
         if (value <= 6 && etap === 3)
@@ -70,6 +73,12 @@ export default function Program() {
                 
             }
             setkaynak(ArrayA);
+            if(branchone==="")
+            count1.current.style.width = "0.2rem";
+            if(branchtwo==="")
+            count2.current.style.width = "0.2rem";
+            if(branchthree==="")
+            count3.current.style.width = "0.2rem";
         },
         [etap]
         )
@@ -114,7 +123,7 @@ export default function Program() {
 
 
             </div>
-            <button onClick={() => {
+            <button className={etap===4 && "hide"} onClick={() => {
                 if(etap===1 && hour>0) {
                 branchone==="javascript" && $("#secim option[value = 'javascript']").remove();
                 branchone==="css" && $("#secim option[value = 'css']").remove();
@@ -129,25 +138,19 @@ export default function Program() {
                 
             }
             if(etap===3 && hour>0) {
-                branchthree==="javascript" && $("#secim option[value = 'javascript']").remove();
-                branchthree==="css" && $("#secim option[value = 'css']").remove();
-                branchthree==="html" && $("#secim option[value = 'html']").remove();
-                branchthree==="php" && $("#secim option[value = 'php']").remove();
-                
-            }
-
-            if(etap===4) {
                 $("#secim option[value = 'css']").remove();
                 $("#secim option[value = 'javascript']").remove();
                 $("#secim option[value = 'html']").remove();
                 $("#secim option[value = 'php']").remove();
+                
             }
+
             if(hour!==0)
                 setetap(etap + 1);
 
             }}>{etap <= 3 ? "sıradaki" : ""}</button>
             <span className="toplambilgi">toplam saat {toplam} </span>
-        <ul className="kaynaksıralama">Önerilen kaynaklar:( {etap===2 && branchone || etap===3 && branchtwo || etap===4 && branchthree} ) 
+        <ul className="kaynaksıralama"> Önerilen kaynaklar: ( {etap===2 && branchone || etap===3 && branchtwo || etap===4 && branchthree} ) 
          {kaynak.map((k)=> {
                 return (<li key={k.id} className = "sıralama">
                     

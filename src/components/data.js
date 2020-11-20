@@ -1,14 +1,14 @@
  export const Kaynaklar = [
     {
         id: 1,
-        kaynakismi: "yazılımgençliği.com",
-        kategori: "yaparaköğren",
+        kaynakismi: "yazılımgençliği1.com",
+        kategori: "kodlayarak öğren",
         text: "lorem ipsum",
         konular : ['javascript','html','css']
     },
     {
         id: 2,
-        kaynakismi: "yazılımgençliği2.com",
+        kaynakismi: "bizimiçinyazılım1.com",
         kategori: "bilgini sına",
         text: "lorem ipsum dolor",
         konular : ['php','html','css']
@@ -23,18 +23,25 @@
     },
     {
         id: 4,
-        kaynakismi: "yazılımgençliği3.com",
-        kategori: "bilgini sına",
+        kaynakismi: "yazılımgençliği2.com",
+        kategori: "kodlayarak öğren",
         text: "lorem ipsum dolor sit amet",
         konular : ['php','css']
     },
     {
         id: 5,
-        kaynakismi: "yazılımgençliği4.com",
+        kaynakismi: "yazılımgençliği3.com",
         kategori: "bilgini sına",
         text: "lorem ipsum dolor sit",
         konular : ['php','css','javascript']
     },
+    {
+        id: 6,
+        kaynakismi: "bizimiçinyazılım3.com",
+        kategori: "dökümantasyon",
+        text: "lorem ipsum dolor sit",
+        konular : ['php','html']
+    }
 
 ]
 
