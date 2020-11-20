@@ -31,7 +31,7 @@
     {
         id: 5,
         kaynakismi: "yazılımgençliği3.com",
-        kategori: "bilgini sına",
+        kategori: "dökümantasyon",
         text: "lorem ipsum dolor sit",
         konular : ['php','css','javascript']
     },
