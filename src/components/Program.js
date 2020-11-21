@@ -137,7 +137,7 @@ export default function Program() {
                     branchtwo === "php" && $("#secim option[value = 'php']").remove();
 
                 }
-                if (etap === 3 && hour > 0) {
+                if (etap === 3 && hour > 0 && branchthree!=="") {
                     $("#secim option[value = 'css']").remove();
                     $("#secim option[value = 'JS']").remove();
                     $("#secim option[value = 'html']").remove();
@@ -145,7 +145,11 @@ export default function Program() {
 
                 }
 
-                if (hour !== 0 && (branchone !=="" || branchtwo !=="" || branchthree !==""))
+                    if (hour !== 0 && branchone !=="" && etap===1)
+                    setetap(etap + 1);
+                    if (hour !== 0 && branchtwo !=="" && etap===2)
+                    setetap(etap + 1);
+                    if (hour !== 0 && branchthree !=="" && etap===3)
                     setetap(etap + 1);
 
             }}>{etap <= 3 ? "sıradaki" : ""}</button>
