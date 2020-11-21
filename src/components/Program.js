@@ -123,7 +123,7 @@ export default function Program() {
 
 
             </div>
-            <button className={etap === 4 && "hide"} onClick={() => {
+            <button className={etap === 4 ? "hide" : "styledbut"} onClick={() => {
                 if (etap === 1 && hour > 0) {
                     branchone === "JS" && $("#secim option[value = 'JS']").remove();
                     branchone === "css" && $("#secim option[value = 'css']").remove();
